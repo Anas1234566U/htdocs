@@ -13,8 +13,7 @@ $jeuxQuery = $conn->query("
         s.nom AS studio_nom
     FROM jeux j
     INNER JOIN studios s
-        ON j.studio_id = s.id
-    ORDER BY j.note ASC
+        ON j.studio_id = s.id ORDER BY j.note DESC
 ");
 $jeux = $jeuxQuery->fetchAll();
 ?>
