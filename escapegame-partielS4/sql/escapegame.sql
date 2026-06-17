@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS escapegame CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS escapegame CHARACTER SET utf8mb4;
 
 USE escapegame;
 
@@ -10,4 +10,4 @@ CREATE TABLE questions (
     message_erreur VARCHAR(255) NOT NULL,
     nb_tentative INT NOT NULL DEFAULT 0,
     nb_reussite INT NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
